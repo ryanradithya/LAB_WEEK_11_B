@@ -1,6 +1,7 @@
 Ryan Radithya Putra
 00000091429
 
+
 1. Kode akhir yang digunakan adalah :
 private fun insertToStore(fileInfo: FileInfo, contentUri: Uri,
                               contentValues: ContentValues
@@ -21,3 +22,4 @@ private fun insertToStore(fileInfo: FileInfo, contentUri: Uri,
 2. Atribut pertama mengarah pada URI FileProvider, dimana link sementara digunakan untuk menyimpan foto, sebelum disimpan ke external. Atribut keempat mengarah pada lokasi yang akan digunakan untuk menyimpan foto atau video AKHIR (mediastore).
 
 3. Pada saat OnClickListener dijalankan, maka openImageCapture() dijalankan, lalu generatePhotoUri() dijalankan untuk menentukan lokasi/link sementara, dimana takePicture/VideoLauncher dijalankan dan menangkap hasil link dan kemudian InsertImage/VideoToStore memanggil InsertToStore() (fungsi general untuk mengarahkan link mediastore/gallery)
+
